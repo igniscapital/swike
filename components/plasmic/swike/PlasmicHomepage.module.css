@@ -32,7 +32,8 @@
   grid-row-gap: 16px;
   align-content: flex-start;
   justify-items: center;
-  background: url("/plasmic/swike/images/swikeBannerpng.png") 0% 0% / cover no-repeat;
+  background: linear-gradient(#00000061, #00000061),
+    url("/plasmic/swike/images/swikeBannerpng.png") 0% 0% / cover no-repeat;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:
@@ -108,6 +109,7 @@
   height: auto;
   margin-bottom: 32px;
   text-align: left;
+  color: #ffffff;
   min-width: 0;
 }
 .h3___0HwlY {
@@ -115,7 +117,7 @@
   width: 100%;
   height: auto;
   line-height: 1.5em;
-  color: #000000;
+  color: #ffffff;
   min-width: 0;
 }
 .column__m9Amf {
