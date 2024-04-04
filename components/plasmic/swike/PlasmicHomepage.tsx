@@ -322,6 +322,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.column__ewpOt)}>
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__nF5D9)}
+                  direction={"right"}
                   triggerOnce={true}
                 >
                   <Stack__
