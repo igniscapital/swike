@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -294,49 +295,66 @@ function PlasmicHomepage__RenderFunc(props: {
           <section className={classNames(projectcss.all, sty.section__rCyxm)}>
             <div className={classNames(projectcss.all, sty.columns__cwvq8)}>
               <div className={classNames(projectcss.all, sty.column__jaQao)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__z666B)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/swike/images/swikeridepng2.png",
-                    fullWidth: 1034,
-                    fullHeight: 892,
-                    aspectRatio: undefined
-                  }}
-                />
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__v7Vp0)}
+                  direction={"left"}
+                  triggerOnce={true}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__iOmlv)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/swike/images/swikeridepng2.png",
+                      fullWidth: 1034,
+                      fullHeight: 892,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </Reveal>
               </div>
               <div className={classNames(projectcss.all, sty.column__ewpOt)}>
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1__qotRo
-                  )}
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__nF5D9)}
+                  triggerOnce={true}
                 >
-                  {"Introducing $SWIKE"}
-                </h1>
-                <h5
-                  data-plasmic-name={"h5"}
-                  data-plasmic-override={overrides.h5}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h5,
-                    projectcss.__wab_text,
-                    sty.h5
-                  )}
-                >
-                  {
-                    '"Dive into the world of SWIKE, the meme coin that combines the freedom of riding with the excitement of crypto. Alongside Pepe, the daring brown frog, we\'re not just riding to live, but living to ride... on the Solana blockchain! Join our community and be part of the meme coin revolution with an undying spirit."'
-                  }
-                </h5>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__r1WQl)}
+                  >
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__i7Hkv
+                      )}
+                    >
+                      {"Introducing $SWIKE"}
+                    </h1>
+                    <h5
+                      data-plasmic-name={"h5"}
+                      data-plasmic-override={overrides.h5}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h5,
+                        projectcss.__wab_text,
+                        sty.h5
+                      )}
+                    >
+                      {
+                        '"Dive into the world of SWIKE, the meme coin that combines the freedom of riding with the excitement of crypto. Alongside Pepe, the daring brown frog, we\'re not just riding to live, but living to ride... on the Solana blockchain! Join our community and be part of the meme coin revolution with an undying spirit."'
+                      }
+                    </h5>
+                  </Stack__>
+                </Reveal>
               </div>
             </div>
           </section>
@@ -347,115 +365,133 @@ function PlasmicHomepage__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__ypGq9)}
               >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__mh305
-                  )}
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__xv8A9)}
+                  direction={"up"}
+                  triggerOnce={true}
                 >
-                  {"Total Supply"}
-                </h3>
-                <h1
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1__eCkci
-                  )}
-                >
-                  {"1.000.000.000"}
-                </h1>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3___5IyfE
-                  )}
-                >
-                  {"50% Pool"}
-                </h3>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__glqCk
-                  )}
-                >
-                  {"50% Development, Marketing, Partnership"}
-                </h3>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__olxp)}
-                >
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__d7Xcv
-                    )}
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__r4IPh)}
                   >
-                    {"LP Burn"}
-                  </h4>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__mv6Rm
-                    )}
-                  >
-                    {"Mint Revoke"}
-                  </h4>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__l11Qm
-                    )}
-                  >
-                    {"Contract Renounced"}
-                  </h4>
-                </Stack__>
-                <h6
-                  data-plasmic-name={"h6"}
-                  data-plasmic-override={overrides.h6}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6
-                  )}
-                >
-                  {
-                    "Rewards: Our community will enjoy rewards through airdrops, competitions, and group rides"
-                  }
-                </h6>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3__mh305
+                      )}
+                    >
+                      {"Total Supply"}
+                    </h3>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__eCkci
+                      )}
+                    >
+                      {"1.000.000.000"}
+                    </h1>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3___5IyfE
+                      )}
+                    >
+                      {"50% Pool"}
+                    </h3>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3__glqCk
+                      )}
+                    >
+                      {"50% Development, Marketing, Partnership"}
+                    </h3>
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__olxp)}
+                    >
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__d7Xcv
+                        )}
+                      >
+                        {"LP Burn"}
+                      </h4>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__mv6Rm
+                        )}
+                      >
+                        {"Mint Revoke"}
+                      </h4>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__l11Qm
+                        )}
+                      >
+                        {"Contract Renounced"}
+                      </h4>
+                    </Stack__>
+                    <h6
+                      data-plasmic-name={"h6"}
+                      data-plasmic-override={overrides.h6}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h6,
+                        projectcss.__wab_text,
+                        sty.h6
+                      )}
+                    >
+                      {
+                        "Rewards: Our community will enjoy rewards through airdrops, competitions, and group rides"
+                      }
+                    </h6>
+                  </Stack__>
+                </Reveal>
               </Stack__>
               <div className={classNames(projectcss.all, sty.column__kparn)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__dn2Wg)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/swike/images/swikeMoneypng.png",
-                    fullWidth: 1024,
-                    fullHeight: 1024,
-                    aspectRatio: undefined
-                  }}
-                />
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__v6CyN)}
+                  direction={"down"}
+                  triggerOnce={true}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__dn2Wg)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/swike/images/swikeMoneypng.png",
+                      fullWidth: 1024,
+                      fullHeight: 1024,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </Reveal>
               </div>
             </div>
           </section>

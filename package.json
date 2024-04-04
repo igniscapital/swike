@@ -11,7 +11,9 @@
   "dependencies": {
     "@plasmicapp/cli": "^0.1.327",
     "@plasmicapp/react-web": "^0.2.324",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.210",
     "@plasmicpkgs/plasmic-nav": "^0.0.161",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.192",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
