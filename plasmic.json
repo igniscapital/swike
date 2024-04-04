@@ -43,7 +43,18 @@
           "path": "/"
         }
       ],
-      "icons": [],
+      "icons": [
+        {
+          "id": "COlfhFkd-lQB",
+          "name": "TelegramSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/swike/icons/PlasmicIcon__TelegramSvgrepoCom1Svg.tsx"
+        },
+        {
+          "id": "ET0ykgw7RZ3R",
+          "name": "Twitter3SvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/swike/icons/PlasmicIcon__Twitter3SvgrepoComsvg.tsx"
+        }
+      ],
       "images": [
         {
           "id": "55_ncDjQHVvO",
@@ -64,6 +75,41 @@
           "id": "at5NwlmO0UeF",
           "name": "swike-money.png",
           "filePath": "../public/plasmic/swike/images/swikeMoneypng.png"
+        },
+        {
+          "id": "nGz72x3BYMz8",
+          "name": "swike-logo-new.png",
+          "filePath": "../public/plasmic/swike/images/swikeLogoNewpng.png"
+        },
+        {
+          "id": "I_HKCCBio9WM",
+          "name": "pepracing.png",
+          "filePath": "../public/plasmic/swike/images/pepracingpng.png"
+        },
+        {
+          "id": "u4gZKL2AuN9k",
+          "name": "swike-logo.png",
+          "filePath": "../public/plasmic/swike/images/swikeLogopng.png"
+        },
+        {
+          "id": "h8yrqhRqNRDW",
+          "name": "bgbar.png",
+          "filePath": "../public/plasmic/swike/images/bgbarpng.png"
+        },
+        {
+          "id": "ou5iacMLLr-u",
+          "name": "swikeride.png",
+          "filePath": "../public/plasmic/swike/images/swikeridepng.png"
+        },
+        {
+          "id": "BOcDMeb2U1KD",
+          "name": "swikeride.png 2",
+          "filePath": "../public/plasmic/swike/images/swikeridepng2.png"
+        },
+        {
+          "id": "rf__kafMuCIS",
+          "name": "banner-swike.png",
+          "filePath": "../public/plasmic/swike/images/bannerSwikepng.png"
         }
       ],
       "indirect": false,
@@ -81,6 +127,28 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
       "customFunctions": []

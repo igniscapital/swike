@@ -59,10 +59,15 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 2T4eiDx1wGi8vZxKUZ7aY6/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: p6lhFh6y1-eG/css
+
+import TelegramSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__TelegramSvgrepoCom1Svg"; // plasmic-import: COlfhFkd-lQB/icon
+import Twitter3SvgrepoComsvgIcon from "./icons/PlasmicIcon__Twitter3SvgrepoComsvg"; // plasmic-import: ET0ykgw7RZ3R/icon
 
 createPlasmicElementProxy;
 
@@ -77,7 +82,9 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  h1?: Flex__<"h1">;
+  navigationBar?: Flex__<typeof NavigationBar>;
+  h5?: Flex__<"h5">;
+  h6?: Flex__<"h6">;
 };
 
 export interface DefaultHomepageProps {}
@@ -138,43 +145,158 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <section className={classNames(projectcss.all, sty.section__lQ33D)}>
-            <div className={classNames(projectcss.all, sty.columns__wW4X7)}>
-              <div className={classNames(projectcss.all, sty.column__pfoEa)}>
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  {"Introducing $SWIKE"}
-                </h1>
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3___0HwlY
-                  )}
-                >
-                  {
-                    '"Dive into the world of SWIKE, the meme coin that combines the freedom of riding with the excitement of crypto. Alongside Pepe, the daring brown frog, we\'re not just riding to live, but living to ride... on the Solana blockchain! Join our community and be part of the meme coin revolution with an undying spirit."'
-                  }
-                </h3>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__m9Amf)} />
-            </div>
-          </section>
-          <section className={classNames(projectcss.all, sty.section___5NxOo)}>
-            <div className={classNames(projectcss.all, sty.columns__uOjz6)}>
-              <div className={classNames(projectcss.all, sty.column__jbiJ)}>
+          <NavigationBar
+            data-plasmic-name={"navigationBar"}
+            data-plasmic-override={overrides.navigationBar}
+            brand={
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__bq3Yn
+                )}
+                component={Link}
+                href={"#"}
+                platform={"nextjs"}
+              >
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img___0LJyn)}
+                  className={classNames(sty.img__pQ76T)}
+                  displayHeight={"40px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: "/plasmic/swike/images/swikeLogopng.png",
+                    fullWidth: 922,
+                    fullHeight: 434,
+                    aspectRatio: undefined
+                  }}
+                />
+              </PlasmicLink__>
+            }
+            className={classNames("__wab_instance", sty.navigationBar)}
+            closeButton={
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__sP3Tp)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://static1.plasmic.app/close.svg"}
+              />
+            }
+            itemsGap={8}
+            menuItems={
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ndQ0M)}
+              >
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__apZfG
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  <TelegramSvgrepoCom1SvgIcon
+                    className={classNames(projectcss.all, sty.svg___5UY9Q)}
+                    role={"img"}
+                  />
+                </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___4RwwJ
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  <Twitter3SvgrepoComsvgIcon
+                    className={classNames(projectcss.all, sty.svg__cYyEg)}
+                    role={"img"}
+                  />
+                </PlasmicLink__>
+              </Stack__>
+            }
+            openButton={
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__fYIp)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://static1.plasmic.app/menu.svg"}
+              />
+            }
+            responsiveBreakpoint={768}
+          />
+
+          <section className={classNames(projectcss.all, sty.section__lQ33D)}>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__eHfiZ)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"500px"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/swike/images/swikeLogopng.png",
+                fullWidth: 922,
+                fullHeight: 434,
+                aspectRatio: undefined
+              }}
+            />
+
+            <h3
+              className={classNames(
+                projectcss.all,
+                projectcss.h3,
+                projectcss.__wab_text,
+                sty.h3__f0YYi
+              )}
+            >
+              {"Dive into the world of SWIKE"}
+            </h3>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__ibIoY)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/swike/images/pepracingpng.png",
+                fullWidth: 1024,
+                fullHeight: 1024,
+                aspectRatio: undefined
+              }}
+            />
+          </section>
+          <section className={classNames(projectcss.all, sty.section__rCyxm)}>
+            <div className={classNames(projectcss.all, sty.columns__cwvq8)}>
+              <div className={classNames(projectcss.all, sty.column__jaQao)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__z666B)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -183,45 +305,139 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/swike/images/swikeStandpng.png",
-                    fullWidth: 1024,
-                    fullHeight: 1024,
+                    src: "/plasmic/swike/images/swikeridepng2.png",
+                    fullWidth: 1034,
+                    fullHeight: 892,
                     aspectRatio: undefined
                   }}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__f8XR4)}>
-                <h3
+              <div className={classNames(projectcss.all, sty.column__ewpOt)}>
+                <h1
                   className={classNames(
                     projectcss.all,
-                    projectcss.h3,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.h3__tuCb8
+                    sty.h1__qotRo
+                  )}
+                >
+                  {"Introducing $SWIKE"}
+                </h1>
+                <h5
+                  data-plasmic-name={"h5"}
+                  data-plasmic-override={overrides.h5}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h5,
+                    projectcss.__wab_text,
+                    sty.h5
                   )}
                 >
                   {
-                    "\"SWIKE is more than just a meme coin. It's a symbol of adventure, camaraderie, and indomitable spirit. Inspired by Pepe, the iconic brown frog known for joy and resilience, we bring the philosophy of 'live to ride and ride to live' into the crypto world. Powered by Solana's blockchain technology, SWIKE is ready to rev your adrenaline with fast transactions, low fees, and a supportive community.\""
+                    '"Dive into the world of SWIKE, the meme coin that combines the freedom of riding with the excitement of crypto. Alongside Pepe, the daring brown frog, we\'re not just riding to live, but living to ride... on the Solana blockchain! Join our community and be part of the meme coin revolution with an undying spirit."'
                   }
-                </h3>
+                </h5>
               </div>
             </div>
           </section>
           <section className={classNames(projectcss.all, sty.section___9ArbU)}>
             <div className={classNames(projectcss.all, sty.columns__zdRZa)}>
-              <div className={classNames(projectcss.all, sty.column__ypGq9)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__ypGq9)}
+              >
                 <h3
                   className={classNames(
                     projectcss.all,
                     projectcss.h3,
                     projectcss.__wab_text,
-                    sty.h3__eCkci
+                    sty.h3__mh305
+                  )}
+                >
+                  {"Total Supply"}
+                </h3>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__eCkci
+                  )}
+                >
+                  {"1.000.000.000"}
+                </h1>
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___5IyfE
+                  )}
+                >
+                  {"50% Pool"}
+                </h3>
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__glqCk
+                  )}
+                >
+                  {"50% Development, Marketing, Partnership"}
+                </h3>
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__olxp)}
+                >
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__d7Xcv
+                    )}
+                  >
+                    {"LP Burn"}
+                  </h4>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__mv6Rm
+                    )}
+                  >
+                    {"Mint Revoke"}
+                  </h4>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__l11Qm
+                    )}
+                  >
+                    {"Contract Renounced"}
+                  </h4>
+                </Stack__>
+                <h6
+                  data-plasmic-name={"h6"}
+                  data-plasmic-override={overrides.h6}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h6,
+                    projectcss.__wab_text,
+                    sty.h6
                   )}
                 >
                   {
-                    '"Total Supply: 1 Billion SWIKE Tokens\nDistribution:\n\n50% Community and Rewards\n25% Development and Innovation\n15% Marketing and Partnerships\n10% Team and Advisors\nBurning Mechanism: We\'ll burn a portion of the tokens from each transaction to increase value for token holders.\n\nRewards: Our community will enjoy rewards through airdrops, competitions, and group rides."'
+                    "Rewards: Our community will enjoy rewards through airdrops, competitions, and group rides"
                   }
-                </h3>
-              </div>
+                </h6>
+              </Stack__>
               <div className={classNames(projectcss.all, sty.column__kparn)}>
                 <PlasmicImg__
                   alt={""}
@@ -243,6 +459,78 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </section>
+          <section className={classNames(projectcss.all, sty.section___5NxOo)}>
+            <div className={classNames(projectcss.all, sty.freeBox__azAo1)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__iEdJd)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/swike/images/bannerSwikepng.png",
+                  fullWidth: 800,
+                  fullHeight: 260,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__znlnv)}
+              >
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__jntWg
+                  )}
+                >
+                  {"Join our community"}
+                </h1>
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___2YCwr)}
+                >
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__m29Ji
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    <TelegramSvgrepoCom1SvgIcon
+                      className={classNames(projectcss.all, sty.svg__gpJfd)}
+                      role={"img"}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link___277Gc
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    <Twitter3SvgrepoComsvgIcon
+                      className={classNames(projectcss.all, sty.svg__laHb)}
+                      role={"img"}
+                    />
+                  </PlasmicLink__>
+                </Stack__>
+              </Stack__>
+            </div>
+          </section>
         </div>
       </div>
     </React.Fragment>
@@ -250,15 +538,19 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
-  h1: ["h1"]
+  root: ["root", "navigationBar", "h5", "h6"],
+  navigationBar: ["navigationBar"],
+  h5: ["h5"],
+  h6: ["h6"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  h1: "h1";
+  navigationBar: typeof NavigationBar;
+  h5: "h5";
+  h6: "h6";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -321,7 +613,9 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    h1: makeNodeComponent("h1"),
+    navigationBar: makeNodeComponent("navigationBar"),
+    h5: makeNodeComponent("h5"),
+    h6: makeNodeComponent("h6"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
