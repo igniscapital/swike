@@ -110,6 +110,11 @@
           "id": "rf__kafMuCIS",
           "name": "banner-swike.png",
           "filePath": "../public/plasmic/swike/images/bannerSwikepng.png"
+        },
+        {
+          "id": "BokbIz8Jy5VF",
+          "name": "swikecoinlogo.png",
+          "filePath": "../public/plasmic/swike/images/swikecoinlogopng.png"
         }
       ],
       "indirect": false,

@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
@@ -83,6 +84,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   navigationBar?: Flex__<typeof NavigationBar>;
   h5?: Flex__<"h5">;
   h6?: Flex__<"h6">;
@@ -146,6 +148,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              '"Dive into the world of SWIKE, the meme coin that combines the freedom of riding with the excitement of crypto. Alongside Pepe, the daring brown frog, we\'re not just riding to live, but living to ride... on the Solana blockchain! Join our community and be part of the meme coin revolution with an undying spirit."'
+            }
+            image={"/plasmic/swike/images/swikecoinlogopng.png"}
+            title={"Swike Coin on SOL"}
+          />
+
           <NavigationBar
             data-plasmic-name={"navigationBar"}
             data-plasmic-override={overrides.navigationBar}
@@ -394,7 +407,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.h1__eCkci
                       )}
                     >
-                      {"1.000.000.000"}
+                      {"88.000.000.000"}
                     </h1>
                     <h3
                       className={classNames(
@@ -575,7 +588,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "h5", "h6"],
+  root: ["root", "pageMetadataOverride", "navigationBar", "h5", "h6"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   navigationBar: ["navigationBar"],
   h5: ["h5"],
   h6: ["h6"]
@@ -585,6 +599,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   navigationBar: typeof NavigationBar;
   h5: "h5";
   h6: "h6";
@@ -650,6 +665,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     navigationBar: makeNodeComponent("navigationBar"),
     h5: makeNodeComponent("h5"),
     h6: makeNodeComponent("h6"),
