@@ -219,6 +219,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.link__apZfG
                   )}
                   component={Link}
+                  href={"https://t.me/+BEL931j1jP5kYTI0"}
                   platform={"nextjs"}
                 >
                   <TelegramSvgrepoCom1SvgIcon
@@ -233,6 +234,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.link___4RwwJ
                   )}
                   component={Link}
+                  href={"https://x.com/swikecoin?t=dUcfXaizZBdDmkjBXA9RWA&s=09"}
                   platform={"nextjs"}
                 >
                   <Twitter3SvgrepoComsvgIcon
@@ -556,6 +558,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__m29Ji
                     )}
                     component={Link}
+                    href={"https://t.me/+BEL931j1jP5kYTI0"}
                     platform={"nextjs"}
                   >
                     <TelegramSvgrepoCom1SvgIcon
@@ -570,6 +573,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link___277Gc
                     )}
                     component={Link}
+                    href={
+                      "https://x.com/swikecoin?t=dUcfXaizZBdDmkjBXA9RWA&s=09"
+                    }
                     platform={"nextjs"}
                   >
                     <Twitter3SvgrepoComsvgIcon
