@@ -466,6 +466,16 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         {"Contract Renounced"}
                       </h4>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__sm7Nn
+                        )}
+                      >
+                        {"CA : 4xsbdPiJMWUp5ZYnHSfu\n38d1UXbzfdU2bHuzeCbyVVK2"}
+                      </h4>
                     </Stack__>
                     <h6
                       data-plasmic-name={"h6"}
